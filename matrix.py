@@ -12,14 +12,13 @@ import math
 #print the matrix such that it looks like
 #the template in the top comment
 def print_matrix( matrix ):
-    n = 0
-    ctr = 0
-    while (ctr < 4):
-        for i in matrix:
-            print i[n]
+    r = 0
+    while r < len(matrix):
+        for i in matrix[r]:
+            print i
             print " "
         print "\n"
-        ctr += 1
+        r += 1
 
 #turn the paramter matrix into an identity matrix
 #you may assume matrix is square
@@ -34,13 +33,21 @@ def ident( matrix ):
             else:
                 matrix[r][c] = 1
             c += 1
-        r += 1
+        r+=1
 
 #multiply m1 by m2, modifying m2 to be the product
 #m1 * m2 -> m2
 #m1 is 4x4, m2 is 4xn
 def matrix_mult( m1, m2 ):
-    
+    row_m2 = 0
+    col_m2 = 0
+    row_m1 = 0
+    col_m1 = 0
+    while col_m2 < len(m2[0]):  #changing m2
+        col_m2 = 0
+        for 
+        m2[row_m2][col_mw]
+        row_m2 += 1
     
 
 
