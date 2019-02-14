@@ -39,17 +39,32 @@ def ident( matrix ):
 #m1 * m2 -> m2
 #m1 is 4x4, m2 is 4xn
 def matrix_mult( m1, m2 ):
-    row_m2 = 0
-    col_m2 = 0
     row_m1 = 0
     col_m1 = 0
-    while col_m2 < len(m2[0]):  #changing m2
-        col_m2 = 0
-        for 
-        m2[row_m2][col_mw]
-        row_m2 += 1
-    
-
+    row_m2 = 0
+    col_m2 = 0
+    res = 0
+    List = []
+    while col_m2 < len(m2[0]):  #changing m2 column
+        row_m1 = 0
+        while row_m1 < len(m1): #resetting m1 row
+            #for m1, row_m1 is same
+            #for m2, col_m2 is same
+            col_m1 = 0
+            row_m2 = 0
+            res = 0
+            #computes result of col_m2
+            while (col_m1 < len(m1) and row_m2 < len(m2)): 
+                res += m1[row_1][col_1] * m2[row_2][col_2]
+                col_m1 += 1
+                row_m2 += 1
+            List.append(res)
+            col_m2 += 1 #move on to others
+            row_m1 += 1
+        int k = 0
+        for i in List:
+            m2[k][col_m2] = i
+            k+=1
 
 
 def new_matrix(rows = 4, cols = 4):
