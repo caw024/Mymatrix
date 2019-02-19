@@ -37,3 +37,5 @@ while (i < 100):
     i+=1
     
 display(screen)
+save_extension(screen, 'img.png')
+
